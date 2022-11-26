@@ -11,13 +11,7 @@ class TestUtrastarTable(unittest.TestCase):
         df2 = pd.DataFrame(columns=['Artist', 'Title', 'Directory', 'Cover', 'Video', 'Commentary'])
         row1 = {'Artist': '257ers',
                 'Title': 'Holz',
-                'Directory': '257 - Holz',
-                'Cover': True,
-                'Video': True,
-                'Commentary': ''}
-        row1 = {'Artist': '257ers',
-                'Title': 'Holz',
-                'Directory': '257 - Holz',
+                'Directory': '257ers - Holz',
                 'Cover': True,
                 'Video': True,
                 'Commentary': ''}
@@ -34,4 +28,9 @@ class TestUtrastarTable(unittest.TestCase):
                 'Video': True,
                 'Commentary': ''}
         df2 = pd.concat([df2, pd.DataFrame([row1, row2, row3])])
+        # Set proper dtypes
+        dtypes = {'Artist': str, 'Title': str, 'Directory': str,
+                  'Cover': bool, 'Video': bool, 'Commentary': str}
+        for key, val in dtypes.items():
+            df2[key] = df2[key].astype(val)
         pd.testing.assert_frame_equal(df1, df2)

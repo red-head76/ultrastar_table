@@ -10,7 +10,15 @@ import pandas as pd
 
 class UltrastarTable():
     def __init__(self) -> None:
+        self._columns = ['Artist', 'Title', 'Directory', 'Cover', 'Video', 'Commentary']
+        self._dtypes = {'Artist': str, 'Title': str, 'Directory': str,
+                        'Cover': bool, 'Video': bool, 'Commentary': str}
         self.local_df = None
+
+    @staticmethod
+    def _set_dtypes(df, dtypes):
+        for column in df.columns:
+            df[column] = df[column].astype(dtypes[column])
 
     def read_from_folder(self, path):
         """Reads all song names from a given folder
@@ -27,7 +35,6 @@ class UltrastarTable():
         """
         path = pathlib.Path(path)
         candidates = os.listdir(path)
-        columns = ['Artist', 'Title', 'Directory', 'Cover', 'Video', 'Commentary']
         dfs = []
         for candidate in candidates:
             try:
@@ -46,13 +53,15 @@ class UltrastarTable():
                 # Check if video is available
                 cover = any([re.search(r"(.*\.jpg)|(.*\.png)", file) for file in files])
                 video = any([re.search(r"(.*\.mp4)|(.*\.avi)", file) for file in files])
-                commentary = None
+                commentary = ''
 
-                dfs.append(pd.DataFrame([dict(zip(columns, [artist, title, candidate, cover,
-                                                            video, commentary]))]))
+                dfs.append(pd.DataFrame([dict(zip(self._columns, [artist, title, candidate, cover,
+                                                                  video, commentary]))]))
             except:
                 warnings.warn(f"{candidate} had wrong format and was skipped.")
-        return pd.concat(dfs, ignore_index=True)
+        df = pd.concat(dfs, ignore_index=True)
+        self._set_dtypes(df, self._dtypes)
+        return df
 
 
 if __name__ == "__main__":
