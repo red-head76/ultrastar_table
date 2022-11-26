@@ -62,10 +62,3 @@ class UltrastarTable():
         df = pd.concat(dfs, ignore_index=True)
         self._set_dtypes(df, self._dtypes)
         return df
-
-
-if __name__ == "__main__":
-    path = pathlib.Path("./testset")
-    ust = UltrastarTable()
-    df = ust.read_from_folder(path)
-    print(df)
