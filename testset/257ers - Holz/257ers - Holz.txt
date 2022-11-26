@@ -1,0 +1,651 @@
+#TITLE:Holz
+#ARTIST:257ers
+#CREATOR:Nicolai (aac)
+#LANGUAGE:German
+#GENRE:Hip-Hop & Rap
+#YEAR:2016
+#MP3:257ers - Holz.mp3
+#COVER:257ers - Holz[CO].jpg
+#VIDEO:257ers - Holz.mp4
+#PREVIEWSTART:49,435
+#MedleyStartBeat:560
+#MedleyEndBeat:656
+#BPM:176
+#GAP:2390
+: 0 1 3 Ich
+: 2 1 3  und
+: 4 2 3  mein
+: 8 3 4  Holz
+- 13
+: 64 1 3 Ich
+: 66 1 3  und
+: 68 2 3  mein
+: 72 3 4  Holz
+- 77
+: 106 1 4 O
+: 108 1 4 k
+: 110 1 4  der
+: 112 2 4  Song
+: 116 1 4  be
+: 118 2 3 ginnt,
+: 122 1 3  und
+: 124 1 3  er
+: 126 1 3  be
+: 128 2 3 kommt
+: 131 2 3  ein
+: 134 2 4  The
+: 138 2 1 ma
+- 142
+: 144 1 3 Ich
+: 146 1 3  und
+: 148 2 3  mein
+: 152 3 4  Holz
+- 157
+: 172 1 4 Und
+: 174 1 4  das
+: 176 2 4  The
+: 180 1 4 ma
+: 182 2 3  heu
+: 186 2 3 te,
+: 192 1 3  es
+: 194 2 3  heißt
+: 200 4 4  Holz
+- 206
+: 208 1 3 Ich
+: 210 1 3  und
+: 212 2 3  mein,
+: 216 1 3  ich
+: 218 1 3  und
+: 220 2 3  mein
+* 224 3 4  Holz
+- 229
+: 236 2 4 Holz
+: 240 2 4  sieht
+: 244 1 4  sehr
+: 246 2 3  schön
+: 250 2 3  aus,
+: 256 2 3  Holz
+: 260 1 3  ist
+: 262 4 4  viel
+: 268 2 1 sei
+: 272 2 1 tig
+- 276
+: 280 1 3 Ich
+: 282 1 3  und
+: 284 2 3  mein
+: 288 3 4  Holz
+- 293
+: 302 1 -1 Du
+: 304 2 4  kannst
+: 308 1 4  es
+: 310 1 4  ver
+: 312 2 3 bren
+: 315 2 3 nen,
+: 318 1 3  du
+: 320 2 3  kannst
+: 324 2 3  es
+: 327 2 4  sä
+: 331 2 1 gen
+- 334
+: 336 1 3 Ich
+: 338 1 3  und
+: 340 2 3  mein,
+: 344 1 3  ich
+: 346 1 3  und
+: 348 2 3  mein
+: 352 3 4  Holz
+- 357
+: 364 1 4 Ja,
+: 366 1 4  wenn
+: 368 1 4  du
+: 370 1 4  es
+: 372 1 4  ver
+: 374 4 3 brennst,
+: 382 1 3  dann
+: 384 1 3  spen
+: 386 1 3 det
+: 388 1 3  es
+: 390 4 4  Wär
+: 396 2 1 me
+- 399
+: 400 1 3 Ich
+: 402 1 3  und
+: 404 2 3  mein,
+: 408 1 3  ich
+: 410 1 3  und
+: 412 2 3  mein
+: 416 3 4  Holz
+- 421
+: 428 1 4 A
+: 430 1 4 ber
+: 432 1 4  wenn
+: 434 1 4  du
+: 436 1 4  es
+: 438 4 3  sägst,
+: 452 1 3  dann
+* 454 2 4  nicht,
+- 458
+F 460 4 3 Oh
+F 466 1 3  Und
+F 468 1 3  jetzt
+F 470 1 3  mal
+F 472 1 3  al
+F 474 1 3 le
+F 476 1 3  in
+F 478 1 3  this
+F 480 2 3  wood,
+F 484 2 3  yo
+- 488
+: 492 2 4 Ich
+: 496 1 4  und
+: 498 2 4  mein
+: 502 4 3  Holz,
+: 508 2 3  ich
+: 512 1 3  und
+: 514 2 3  mein
+* 518 3 4  Holz
+* 522 1 3 ~
+* 524 4 1 ~
+- 530
+F 536 2 3 (Hol
+F 540 2 3 zi,
+F 544 2 3  Hol
+F 548 2 3 zi,
+F 552 4 3  Holz)
+- 558
+: 560 1 4 Ich
+: 562 1 4  und
+: 564 1 4  mein
+: 566 3 3  Holz,
+- 571
+: 576 1 3 Ich
+: 578 1 3  und
+: 580 2 3  mein
+: 584 3 4  Holz
+- 589
+: 592 1 3 Ich
+: 594 1 3  und
+: 596 2 3  mein,
+: 600 1 3  ich
+: 602 1 3  und
+: 604 2 3  mein
+: 608 2 4  Holz,
+: 612 2 3  mein
+: 616 3 4  Holz
+- 620
+: 620 2 4 Ich
+: 624 1 4  und
+: 626 2 4  mein
+: 630 4 3  Holz,
+: 636 2 3  ich
+: 640 1 3  und
+: 642 2 3  mein
+: 646 3 4  Holz
+: 650 1 3 ~
+: 652 4 1 ~
+- 658
+F 664 2 3 (Hol
+F 668 2 3 zi,
+F 672 2 3  Hol
+F 676 2 3 zi,
+F 680 4 3  Holz)
+- 686
+: 688 1 4 Ich
+: 690 1 4  und
+: 692 1 4  mein
+: 694 3 3  Holz,
+: 704 1 3  ich
+: 706 1 3  und
+: 708 2 3  mein
+: 712 3 4  Holz
+- 717
+: 720 1 3 Ich
+: 722 1 3  und
+* 724 2 3  mein,
+: 728 1 3  ich
+: 730 1 3  und
+: 732 2 3  mein
+* 736 2 4  Holz
+- 740
+: 744 1 4 Ich
+: 746 1 4  und
+: 748 2 4  mein
+: 752 2 4  Holz,
+: 756 2 4  best
+: 760 2 3  friends
+: 764 2 3  fo
+: 768 1 3 re
+: 770 4 3 ver
+- 775
+: 775 3 4 H
+: 780 2 1 d
+* 784 2 4 g
+* 788 1 4 d
+* 790 2 1 l,
+: 794 1 1  wir
+: 796 2 1  sind
+: 800 2 4  un
+: 804 1 1 zer
+: 806 2 4 trenn
+: 810 2 1 lich
+- 814
+: 816 2 4 Un
+: 820 1 4 ver
+: 822 2 3 ständ
+: 826 2 3 lich
+- 828
+: 828 1 3 Wa
+: 830 1 3 rum
+: 832 1 4  heut
+: 834 1 4 zu
+: 836 1 1 ta
+: 838 2 1 ge
+- 840
+: 840 1 4 Nicht
+: 842 1 4  je
+: 844 1 1 der
+: 846 1 1  Be
+: 848 1 4 sit
+: 850 1 4 zer
+: 852 1 1  ei
+: 854 1 1 nes
+: 856 1 4  wun
+: 858 1 4 der
+: 860 1 1 ba
+: 862 2 1 ren
+- 864
+: 864 1 4 E
+: 866 1 4 xem
+: 868 1 1 pla
+: 870 1 1 rers
+: 872 2 4  Holz
+: 876 2 1  sein
+: 880 2 1  will
+- 882
+F 882 1 3 Und
+F 884 1 3  nicht
+F 886 1 3  nur
+F 888 1 3  weil
+F 890 1 3  man
+F 892 1 3  es
+F 894 1 3  sich
+F 896 1 3  wun
+F 898 1 3 der
+F 900 2 3 schön
+- 902
+F 902 2 3 Ins
+F 905 2 3  Wohn
+F 908 1 3 zim
+F 910 1 3 mer
+F 912 1 3  stel
+F 914 1 3 len
+F 916 2 3  kann
+- 920
+F 924 4 3 Nein,
+- 930
+F 940 4 3 Man
+F 948 1 3  kann
+F 950 1 3  es
+F 952 4 3  auch
+- 958
+F 964 2 3 La
+F 967 1 3 ckie
+F 969 2 3 ren
+- 972
+F 972 1 3 So
+F 974 1 3  und
+F 976 2 3  jetzt
+F 980 1 3  noch
+F 982 1 3 mal
+F 984 1 3  al
+F 986 1 3 le
+F 988 1 3  in
+F 990 2 3  this
+F 993 2 3  wood,
+F 996 4 3  yo
+- 1002
+: 1004 2 4 Ich
+: 1008 1 4  und
+: 1010 2 4  mein
+: 1014 4 3  Holz,
+: 1020 2 3  ich
+: 1024 1 3  und
+: 1026 2 3  mein
+* 1030 3 4  Holz
+* 1034 1 3 ~
+* 1036 4 1 ~
+- 1042
+F 1048 2 3 (Hol
+F 1052 2 3 zi,
+F 1056 2 3  Hol
+F 1060 2 3 zi,
+F 1064 4 3  Holz)
+- 1070
+: 1072 1 4 Ich
+: 1074 1 4  und
+: 1076 1 4  mein
+: 1078 3 3  Holz,
+- 1083
+: 1088 1 3 Ich
+: 1090 1 3  und
+: 1092 2 3  mein
+* 1096 3 4  Holz
+- 1101
+: 1104 1 3 Ich
+: 1106 1 3  und
+: 1108 2 3  mein,
+: 1112 1 3  ich
+: 1114 1 3  und
+: 1116 2 3  mein
+: 1120 2 4  Holz,
+: 1124 2 3  mein
+: 1128 3 4  Holz
+- 1132
+: 1132 2 4 Ich
+: 1136 1 4  und
+: 1138 2 4  mein
+: 1142 4 3  Holz,
+: 1148 2 3  ich
+: 1152 1 3  und
+: 1154 2 3  mein
+: 1158 3 4  Holz
+: 1162 1 3 ~
+: 1164 4 1 ~
+- 1170
+F 1176 2 3 (Hol
+F 1180 2 3 zi,
+F 1184 2 3  Hol
+F 1188 2 3 zi,
+F 1192 4 3  Holz)
+- 1198
+: 1200 1 4 Ich
+: 1202 1 4  und
+: 1204 1 4  mein
+* 1206 3 3  Holz,
+: 1216 1 3  ich
+: 1218 1 3  und
+: 1220 2 3  mein
+: 1224 3 4  Holz
+- 1229
+: 1232 1 3 Ich
+: 1234 1 3  und
+: 1236 2 3  mein,
+: 1240 1 3  ich
+: 1242 1 3  und
+: 1244 2 3  mein
+: 1248 2 4  Holz
+- 1252
+F 1254 1 3 Mit
+F 1256 2 3  Holz
+F 1260 1 3  kann
+F 1262 1 3  man
+F 1264 2 3  voll
+F 1268 1 3  gut
+F 1270 1 3  nen
+F 1272 2 3  Stau
+F 1276 1 3 damm
+F 1278 4 3  bauen
+- 1282
+F 1282 1 3 Und
+F 1284 1 3  wenn
+F 1286 1 3  der
+F 1288 2 3  Stau
+F 1292 2 3  dann
+F 1296 2 3  bricht
+F 1300 2 3  ihm
+F 1304 2 3  auch
+F 1308 1 3  ver
+F 1310 4 3 trauen,
+- 1314
+F 1314 1 3 Denn
+F 1316 1 3  das
+F 1318 1 3  ist
+F 1320 1 3  cra
+F 1322 1 3 zy
+F 1324 1 3  die
+F 1326 1 3 ses
+F 1328 4 3  Zeug,
+F 1336 1 3  ret
+F 1338 1 3 tet
+F 1340 1 3  näm
+F 1342 1 3 lich
+F 1344 1 3  Leu
+F 1346 2 3 te,
+- 1348
+F 1348 1 3 Wie
+F 1350 1 3  die
+F 1352 1 3  Bay
+F 1354 1 3 watch
+F 1356 1 3  flit
+F 1358 1 3 chen
+F 1360 1 3  o
+F 1362 1 3 der
+F 1364 1 3  die
+F 1366 1 3 ser
+F 1368 1 3  Da
+F 1370 1 3 vid
+F 1372 1 3  Has
+F 1374 1 3 sel
+F 1376 2 3 holt
+- 1378
+F 1378 1 3 Du
+F 1380 1 3  hast
+F 1382 1 3  ein
+F 1384 1 3  Play
+F 1386 1 3 si
+F 1388 1 3  Pad
+F 1390 1 3  aus
+F 1392 1 3  Gold,
+F 1394 1 3  ich
+F 1396 1 3  bin
+F 1398 1 3  auf
+F 1400 1 3  Ket
+F 1402 1 3 ten
+F 1404 1 3 sä
+F 1406 1 3 ge
+F 1408 4 3  stolz
+- 1413
+F 1414 1 3 Der
+F 1416 1 3  Ma
+F 1418 1 3 ha
+F 1420 1 3 go
+F 1422 1 3 ni
+F 1424 1 3  Proll,
+F 1426 1 3  ich
+F 1428 1 3  bin
+F 1430 1 3  kein
+F 1432 1 3  Press
+F 1434 1 3 span
+F 1436 1 3  un
+F 1438 1 3 ters
+F 1440 4 3  Volk
+- 1446
+F 1448 1 3 Let
+F 1450 1 3  us
+F 1452 1 3  take
+F 1454 1 3  some
+F 1456 2 3  Holz
+F 1460 1 3  vor
+F 1462 1 3  Ge
+F 1464 2 3 brauchs
+F 1468 1 3 ge
+F 1470 1 3 gens
+F 1472 2 3 tän
+F 1475 1 3 de
+- 1476
+F 1476 1 3 Es
+F 1478 1 3  be
+F 1480 1 3 ginnt
+F 1482 1 3  ein
+F 1484 1 3  neu
+F 1486 1 3 es
+F 1488 1 3  Le
+F 1490 1 3 ben,
+F 1492 1 3  wenn
+F 1494 1 3  ein
+F 1496 2 3  Baum
+F 1500 1 3 le
+F 1502 2 3 ben...
+- 1506
+: 1508 1 -1 Mei
+: 1510 1 -1 ne
+: 1512 2 4  Bank,
+: 1516 2 4  mein
+: 1520 2 4  Tisch,
+: 1524 1 4  mei
+: 1526 1 4 ne
+: 1528 1 -1  Trep
+: 1530 1 -1 pe,
+: 1532 1 -1  mei
+: 1534 1 -1 ne
+: 1536 1 -1  Be
+: 1538 2 -1 sen,
+- 1540
+: 1540 1 -1 Mei
+: 1542 1 -1 ne
+: 1544 1 1  Va
+: 1546 1 1 se,
+: 1548 1 1  dein
+: 1550 1 1  Zu
+: 1552 1 1 hau
+: 1554 1 1 se,
+: 1556 2 1  mein
+: 1560 3 -3  Kopf
+- 1565
+: 1570 1 -1 Mei
+: 1572 1 -1 ne
+: 1574 1 -1  Ge
+* 1576 1 4 dan
+* 1578 1 4 ken,
+* 1580 2 4  mein
+* 1584 2 4  Herz,
+* 1588 2 4  mein
+: 1592 1 -1  Le
+: 1594 2 -1 ben,
+- 1596
+: 1596 1 -1 Mei
+: 1598 1 -1 ne
+: 1600 2 -1  Welt
+: 1604 1 -1  ist
+: 1606 1 -1  der
+: 1608 1 1  schwers
+: 1610 1 1 te
+: 1612 1 1  und
+: 1614 1 -1  der
+: 1616 2 -3  hef
+: 1620 1 -3 tigs
+: 1622 1 -4 te
+: 1624 2 -4  Stock
+- 1627
+F 1628 1 3 Put
+F 1630 1 3  your
+F 1632 2 3  hands
+F 1636 1 3  in
+F 1638 1 3  the
+F 1640 2 3  air
+- 1643
+: 1644 2 4 Ich
+: 1648 1 4  und
+: 1650 2 4  mein
+: 1654 4 3  Holz,
+: 1660 2 3  ich
+: 1664 1 3  und
+: 1666 2 3  mein
+: 1670 3 4  Holz
+: 1674 1 3 ~
+: 1676 4 1 ~
+- 1682
+F 1688 2 3 (Hol
+F 1692 2 3 zi,
+F 1696 2 3  Hol
+F 1700 2 3 zi,
+F 1704 4 3  Holz)
+- 1710
+: 1712 1 4 Ich
+: 1714 1 4  und
+: 1716 1 4  mein
+: 1718 3 3  Holz,
+- 1723
+: 1728 1 3 Ich
+: 1730 1 3  und
+: 1732 2 3  mein
+: 1736 3 4  Holz
+- 1741
+: 1744 1 3 Ich
+: 1746 1 3  und
+: 1748 2 3  mein,
+: 1752 1 3  ich
+: 1754 1 3  und
+: 1756 2 3  mein
+: 1760 2 4  Holz,
+: 1764 2 3  mein
+: 1768 3 4  Holz
+- 1772
+: 1772 2 4 Ich
+: 1776 1 4  und
+: 1778 2 4  mein
+: 1782 4 3  Holz,
+: 1788 2 3  ich
+: 1792 1 3  und
+: 1794 2 3  mein
+: 1798 3 4  Holz
+: 1802 1 3 ~
+: 1804 4 1 ~
+- 1810
+F 1816 2 3 (Hol
+F 1820 2 3 zi,
+F 1824 2 3  Hol
+F 1828 2 3 zi,
+F 1832 4 3  Holz)
+- 1838
+: 1840 1 4 Ich
+: 1842 1 4  und
+: 1844 1 4  mein
+: 1846 3 3  Holz,
+: 1856 1 3  ich
+: 1858 1 3  und
+: 1860 2 3  mein
+: 1864 3 4  Holz
+- 1869
+: 1872 1 3 Ich
+: 1874 1 3  und
+: 1876 2 3  mein,
+: 1880 1 3  ich
+: 1882 1 3  und
+: 1884 2 3  mein
+: 1888 2 4  Holz
+- 1892
+: 1900 2 4 Ich
+: 1904 1 4  und
+* 1906 1 4  mein
+* 1908 1 3 ~
+* 1910 4 3  Holz,
+: 1916 2 3  ich
+: 1920 1 3  und
+: 1922 2 4  mein
+* 1926 3 4  Holz
+* 1930 1 3 ~
+* 1932 2 1 ~
+- 1936
+: 1968 1 4 Ich
+: 1970 1 4  und
+: 1972 1 4  mein
+: 1974 3 3  Holz,
+: 1984 1 3  ich
+: 1986 1 3  und
+: 1988 1 3  mein
+: 1990 1 4 ~
+: 1992 3 4  Holz
+- 1997
+: 2028 2 4 Ich
+: 2032 1 4  und
+: 2034 1 4  mein
+: 2036 1 3 ~
+: 2038 4 3  Holz,
+: 2044 2 3  ich
+: 2048 1 3  und
+: 2050 2 4  mein
+: 2054 3 4  Holz
+: 2058 1 3 ~
+: 2060 2 1 ~
+E

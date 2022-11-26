@@ -1,0 +1,6 @@
+
+| Artist              | Title      | Directory                        | Cover | Video | Commentary |
+|---------------------+------------+----------------------------------+-------+-------+------------|
+| 257ers              | Holz       | 257 - Holz                       | Yes   | Yes   |            |
+| Culcha Candela      | Ey DJ      | Culcha Candela - Ey DJ           | Yes   | Yes   |            |
+| Panic! At The Disco | High Hopes | Panic! At The Disco - High Hopes | Yes   | Yes   |            |
