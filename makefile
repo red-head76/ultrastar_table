@@ -1,13 +1,13 @@
 all: compile test checkstyle
 
 compile:
-	python3 -m py_compile src/*.py
+	python3 -m py_compile ultrastar_table/*.py
 
 test:
 	python3 -m unittest discover -s tests
 
 checkstyle:
-	flake8 src/*.py
+	flake8 ultrastar_table/*.py
 	flake8 tests/*.py
 
 clean:
