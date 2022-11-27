@@ -24,6 +24,8 @@ class UltrastarTable():
         self.dfs = {"LOCAL": None,
                     "RANGE_SONGLIST": None,
                     "RANGE_CHECKLIST": None}
+        with open("config.json") as f:
+            self.config = json.load(f)
 
     @staticmethod
     def _set_dtypes(df, dtypes):
@@ -92,13 +94,11 @@ class UltrastarTable():
         return creds
 
     def read_from_spreadsheet(self):
-        with open("connection.json") as f:
-            sheetinfo = json.load(f)
-        spreadsheet_id = sheetinfo['SPREADSHEET_ID']
+        spreadsheet_id = self.config['SPREADSHEET_ID']
         creds = self._handle_login()
         dfs = {}
         for name in ['RANGE_SONGLIST', 'RANGE_CHECKLIST']:
-            range_name = sheetinfo[name]
+            range_name = self.config[name]
             try:
                 service = build('sheets', 'v4', credentials=creds)
 
@@ -118,3 +118,7 @@ class UltrastarTable():
             except HttpError as err:
                 print(err)
         return dfs
+
+    def update_dfs(self):
+        self.dfs["LOCAL"] = self.read_from_folder(self.config["LOCAL_PATH"])
+        self.dfs.update(self.read_from_spreadsheet())
