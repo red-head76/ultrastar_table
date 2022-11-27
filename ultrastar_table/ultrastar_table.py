@@ -4,7 +4,13 @@ import os
 import pathlib
 import re
 import warnings
+import json
 
+from google.auth.transport.requests import Request
+from google.oauth2.credentials import Credentials
+from google_auth_oauthlib.flow import InstalledAppFlow
+from googleapiclient.discovery import build
+from googleapiclient.errors import HttpError
 import pandas as pd
 
 
@@ -13,7 +19,11 @@ class UltrastarTable():
         self._columns = ['Artist', 'Title', 'Directory', 'Cover', 'Video', 'Commentary']
         self._dtypes = {'Artist': str, 'Title': str, 'Directory': str,
                         'Cover': bool, 'Video': bool, 'Commentary': str}
-        self.local_df = None
+        # If modifying these scopes, delete the file token.json.
+        self._scopes = ['https://www.googleapis.com/auth/spreadsheets']
+        self.dfs = {"LOCAL": None,
+                    "RANGE_SONGLIST": None,
+                    "RANGE_CHECKLIST": None}
 
     @staticmethod
     def _set_dtypes(df, dtypes):
@@ -57,8 +67,54 @@ class UltrastarTable():
 
                 dfs.append(pd.DataFrame([dict(zip(self._columns, [artist, title, candidate, cover,
                                                                   video, commentary]))]))
-            except:
+            except Exception as e:
                 warnings.warn(f"{candidate} had wrong format and was skipped.")
+                print(e)
         df = pd.concat(dfs, ignore_index=True)
         self._set_dtypes(df, self._dtypes)
         return df
+
+    def _handle_login(self):
+        # This follows the tutorial at https://developers.google.com/sheets/api/quickstart/python
+        if os.path.exists('token.json'):
+            creds = Credentials.from_authorized_user_file('token.json', self._scopes)
+        # If there are no (valid) credentials available, let the user log in.
+        if not creds or not creds.valid:
+            if creds and creds.expired and creds.refresh_token:
+                creds.refresh(Request())
+            else:
+                flow = InstalledAppFlow.from_client_secrets_file(
+                    'credentials.json', self._scopes)
+                creds = flow.run_local_server(port=0)
+            # Save the credentials for the next run
+            with open('token.json', 'w') as token:
+                token.write(creds.to_json())
+        return creds
+
+    def read_from_spreadsheet(self):
+        with open("connection.json") as f:
+            sheetinfo = json.load(f)
+        spreadsheet_id = sheetinfo['SPREADSHEET_ID']
+        creds = self._handle_login()
+        dfs = {}
+        for name in ['RANGE_SONGLIST', 'RANGE_CHECKLIST']:
+            range_name = sheetinfo[name]
+            try:
+                service = build('sheets', 'v4', credentials=creds)
+
+                # Call the Sheets API
+                sheet = service.spreadsheets()
+                result = sheet.values().get(spreadsheetId=spreadsheet_id,
+                                            range=range_name).execute()
+                values = result.get('values', [])
+                if not values:
+                    print('No data found.')
+                    return
+                df = pd.DataFrame(values)
+                df.columns = df.iloc[0]
+                df = df[1:]
+                dfs[name] = df
+
+            except HttpError as err:
+                print(err)
+        return dfs
