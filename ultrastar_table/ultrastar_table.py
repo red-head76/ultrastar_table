@@ -122,3 +122,15 @@ class UltrastarTable():
     def update_dfs(self):
         self.dfs["LOCAL"] = self.read_from_folder(self.config["LOCAL_PATH"])
         self.dfs.update(self.read_from_spreadsheet())
+
+    def write_to_spreadsheet(self):
+        creds = self._handle_login()
+        service = build('sheets', 'v4', credentials=creds)
+        sheet = service.spreadsheets()
+        body = {"range": self.config["RANGE_SONGLIST"],
+                "majorDimension": 'ROWS',
+                "values": self.dfs["LOCAL"].T.reset_index().T.values.tolist()}
+        sheet.values().update(spreadsheetId=self.config["SPREADSHEET_ID"],
+                              valueInputOption='RAW',
+                              range=self.config["RANGE_SONGLIST"],
+                              body=body).execute()
