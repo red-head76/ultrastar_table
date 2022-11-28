@@ -23,6 +23,7 @@ class UltrastarTable():
         self._scopes = ['https://www.googleapis.com/auth/spreadsheets']
         self.dfs = {"LOCAL": None,
                     "RANGE_SONGLIST": None,
+                    "JOINED": None,
                     "RANGE_CHECKLIST": None}
         with open("config.json") as f:
             self.config = json.load(f)
@@ -65,7 +66,7 @@ class UltrastarTable():
                 # Check if video is available
                 cover = any([re.search(r"(.*\.jpg)|(.*\.png)", file) for file in files])
                 video = any([re.search(r"(.*\.mp4)|(.*\.avi)", file) for file in files])
-                commentary = ''
+                commentary = None
 
                 dfs.append(pd.DataFrame([dict(zip(self._columns, [artist, title, candidate, cover,
                                                                   video, commentary]))]))
@@ -101,21 +102,24 @@ class UltrastarTable():
             range_name = self.config[name]
             try:
                 service = build('sheets', 'v4', credentials=creds)
-
                 # Call the Sheets API
                 sheet = service.spreadsheets()
                 result = sheet.values().get(spreadsheetId=spreadsheet_id,
                                             range=range_name).execute()
                 values = result.get('values', [])
                 if not values:
-                    print('No data found.')
-                    return
+                    raise ValueError(f"No data could be retrieved for range {range_name}")
+                print("Sucessfully retrieved data for range {range_name}")
                 df = pd.DataFrame(values)
                 df.columns = df.iloc[0]
                 df = df[1:]
+                self._set_dtypes(df, self._dtypes)
+                df = df.reset_index(drop=True)
                 dfs[name] = df
-
             except HttpError as err:
+                print("Request failed")
+                print(err)
+            except Exception as err:
                 print(err)
         return dfs
 
@@ -129,8 +133,13 @@ class UltrastarTable():
         sheet = service.spreadsheets()
         body = {"range": self.config["RANGE_SONGLIST"],
                 "majorDimension": 'ROWS',
-                "values": self.dfs["LOCAL"].T.reset_index().T.values.tolist()}
+                "values": self.dfs["JOINED"].T.reset_index().T.values.tolist()}
         sheet.values().update(spreadsheetId=self.config["SPREADSHEET_ID"],
                               valueInputOption='RAW',
                               range=self.config["RANGE_SONGLIST"],
                               body=body).execute()
+
+    def merge_dfs(self):
+        username = os.getlogin()
+        self.dfs["LOCAL"][username] = True
+        self.dfs["JOINED"] = self.dfs["RANGE_SONGLIST"].merge(self.dfs["LOCAL"], how='outer')
