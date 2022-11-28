@@ -31,7 +31,7 @@ class UltrastarTable():
     @staticmethod
     def _set_dtypes(df, dtypes):
         for column in df.columns:
-            df[column] = df[column].astype(dtypes[column])
+            df[column] = df[column].astype(dtypes.get(column, bool))
 
     def read_from_folder(self, path):
         """Reads all song names from a given folder
@@ -109,7 +109,7 @@ class UltrastarTable():
                 values = result.get('values', [])
                 if not values:
                     raise ValueError(f"No data could be retrieved for range {range_name}")
-                print("Sucessfully retrieved data for range {range_name}")
+                print(f"Sucessfully retrieved data for range {range_name}")
                 df = pd.DataFrame(values)
                 df.columns = df.iloc[0]
                 df = df[1:]
@@ -120,7 +120,7 @@ class UltrastarTable():
                 print("Request failed")
                 print(err)
             except Exception as err:
-                print(err)
+                print("Exception: " + err)
         return dfs
 
     def update_dfs(self):

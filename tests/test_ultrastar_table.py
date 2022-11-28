@@ -14,19 +14,19 @@ class TestUtrastarTable(unittest.TestCase):
                 'Directory': '257ers - Holz',
                 'Cover': True,
                 'Video': True,
-                'Commentary': ''}
+                'Commentary': None}
         row2 = {'Artist': 'Culcha Candela',
                 'Title': 'Ey DJ',
                 'Directory': 'Culcha Candela - Ey DJ',
                 'Cover': True,
                 'Video': True,
-                'Commentary': ''}
+                'Commentary': None}
         row3 = {'Artist': 'Panic! At The Disco',
                 'Title': 'High Hopes',
                 'Directory': 'Panic! At The Disco - High Hopes',
                 'Cover': True,
                 'Video': True,
-                'Commentary': ''}
+                'Commentary': None}
         df2 = pd.concat([df2, pd.DataFrame([row1, row2, row3])])
         # Set proper dtypes
         dtypes = {'Artist': str, 'Title': str, 'Directory': str,
