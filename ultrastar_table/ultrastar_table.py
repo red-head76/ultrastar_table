@@ -59,7 +59,8 @@ class UltrastarTable():
                     raise FileNotFoundError("There are multiple .txt files in the" +
                                             f"subfolder {candidate}")
                 txtfile = newlist[0]
-                with open(path / candidate / txtfile, "r") as f:
+                # ignore encoding errors that might appear in the lyrics section
+                with open(path / candidate / txtfile, "r", errors="ignore") as f:
                     data = "".join(f.readlines())
                 artist = re.search(r"(?<=#ARTIST:).*?(?=\n)", data).group(0)
                 title = re.search(r"(?<=#TITLE:).*?(?=\n)", data).group(0)
@@ -74,6 +75,8 @@ class UltrastarTable():
                 print(e)
         df = pd.concat(dfs, ignore_index=True)
         self._set_dtypes(df, self._dtypes)
+        # sort with respect to Artist and Title and re-index the frame
+        df = df.sort_values(by=["Artist", "Title"]).reset_index(drop=True)
         return df
 
     def _handle_login(self):
