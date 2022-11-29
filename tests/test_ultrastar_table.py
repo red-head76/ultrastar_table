@@ -1,6 +1,6 @@
-from ultrastar_table import ultrastar_table
-import unittest
 import pandas as pd
+import unittest
+From ultrastar_table import ultrastar_table
 
 
 class TestUtrastarTable(unittest.TestCase):
@@ -14,23 +14,23 @@ class TestUtrastarTable(unittest.TestCase):
                 'Directory': '257ers - Holz',
                 'Cover': True,
                 'Video': True,
-                'Commentary': None}
+                # 'Commentary': None}
         row2 = {'Artist': 'Culcha Candela',
                 'Title': 'Ey DJ',
                 'Directory': 'Culcha Candela - Ey DJ',
                 'Cover': True,
                 'Video': True,
-                'Commentary': None}
+                # 'Commentary': None}
         row3 = {'Artist': 'Panic! At The Disco',
                 'Title': 'High Hopes',
                 'Directory': 'Panic! At The Disco - High Hopes',
                 'Cover': True,
                 'Video': True,
-                'Commentary': None}
+                # 'Commentary': None}
         df2 = pd.concat([df2, pd.DataFrame([row1, row2, row3])])
         # Set proper dtypes
         dtypes = {'Artist': str, 'Title': str, 'Directory': str,
-                  'Cover': bool, 'Video': bool, 'Commentary': str}
+                  'Cover': bool, 'Video': bool}  # , 'Commentary': str}
         for key, val in dtypes.items():
             df2[key] = df2[key].astype(val)
         pd.testing.assert_frame_equal(df1, df2)
