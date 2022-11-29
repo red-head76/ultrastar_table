@@ -16,9 +16,9 @@ import pandas as pd
 
 class UltrastarTable():
     def __init__(self) -> None:
-        self._columns = ['Artist', 'Title', 'Directory', 'Cover', 'Video', 'Commentary']
+        self._columns = ['Artist', 'Title', 'Directory', 'Cover', 'Video']
         self._dtypes = {'Artist': str, 'Title': str, 'Directory': str,
-                        'Cover': bool, 'Video': bool, 'Commentary': str}
+                        'Cover': bool, 'Video': bool}
         # If modifying these scopes, delete the file token.json.
         self._scopes = ['https://www.googleapis.com/auth/spreadsheets']
         self.dfs = {"LOCAL": None,
@@ -66,10 +66,9 @@ class UltrastarTable():
                 # Check if video is available
                 cover = any([re.search(r"(.*\.jpg)|(.*\.png)", file) for file in files])
                 video = any([re.search(r"(.*\.mp4)|(.*\.avi)", file) for file in files])
-                commentary = None
 
                 dfs.append(pd.DataFrame([dict(zip(self._columns, [artist, title, candidate, cover,
-                                                                  video, commentary]))]))
+                                                                  video]))]))
             except Exception as e:
                 warnings.warn(f"{candidate} had wrong format and was skipped.")
                 print(e)
@@ -79,6 +78,7 @@ class UltrastarTable():
 
     def _handle_login(self):
         # This follows the tutorial at https://developers.google.com/sheets/api/quickstart/python
+        creds = None
         if os.path.exists('token.json'):
             creds = Credentials.from_authorized_user_file('token.json', self._scopes)
         # If there are no (valid) credentials available, let the user log in.
